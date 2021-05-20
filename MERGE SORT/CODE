@@ -38,11 +38,11 @@ int main() {
     scanf("%d", &a[i]);
     clock_t begin = clock();
   merge_sort(0, n - 1, a, aux);
+  clock_t end = clock();
   printf("Printing the sorted array:\n");
   for (i = 0; i < n; i++){
      printf("%d\t", a[i]);
 }
- clock_t end = clock();
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
   printf("\n\nEXECUTION TIME : %.10fseconds\n", time_spent);
   return 0;
